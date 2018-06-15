@@ -24,6 +24,11 @@ public class ProductCategoryServiceImpl implements ProductCategoryService {
         return productCategoryDao.findAll();
     }
 
+    /**
+     * 根据类目编号查询
+     * @param productTypeList
+     * @return
+     */
     @Override
     public List<ProductCategory> findByCategoryTypeIn(List<Integer> productTypeList) {
         return productCategoryDao.findByCategoryTypeIn(productTypeList);

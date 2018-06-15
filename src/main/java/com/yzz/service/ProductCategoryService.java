@@ -10,6 +10,11 @@ public interface ProductCategoryService {
 
     List<ProductCategory> findAll();
 
+    /**
+     * 根据类目编号查询
+     * @param productTypeList
+     * @return
+     */
     List<ProductCategory> findByCategoryTypeIn(List<Integer> productTypeList);
 
     ProductCategory save(ProductCategory productCategory);
