@@ -22,6 +22,10 @@ public class ProductInfoServiceImpl implements ProductInfoService {
         return productInfoDao.findOne(productInfoId);
     }
 
+    /**
+     * 查询所有上架商品
+     * @return
+     */
     @Override
     public List<ProductInfo> findUpAll() {
         return productInfoDao.findByProductStatus(ProductInfoStatusEnum.UP.getCode());

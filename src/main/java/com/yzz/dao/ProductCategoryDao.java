@@ -7,5 +7,10 @@ import java.util.List;
 
 public interface ProductCategoryDao extends JpaRepository<ProductCategory,Integer> {
 
+    /**
+     * 根据类目编号查询
+     * @param categoryTypeList
+     * @return
+     */
     List<ProductCategory> findByCategoryTypeIn(List<Integer> categoryTypeList);
 }
